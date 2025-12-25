@@ -2,6 +2,18 @@
 Changelog for package rclcpp_lifecycle
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+30.1.4 (2025-12-23)
+-------------------
+
+30.1.3 (2025-11-18)
+-------------------
+* add : get clients, servers info (`#2569 <https://github.com/ros2/rclcpp/issues/2569>`_)
+* Fix REP url locations (`#2987 <https://github.com/ros2/rclcpp/issues/2987>`_)
+* Add get_parameter_or overload returning value or alternative (`#2973 <https://github.com/ros2/rclcpp/issues/2973>`_)
+* Contributors: Minju, Lee, Tim Clephas, Zheng Qu
+
+30.1.2 (2025-10-21)
+-------------------
 
 30.1.1 (2025-09-11)
 -------------------

@@ -2,6 +2,36 @@
 Changelog for package rclcpp
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+30.1.4 (2025-12-23)
+-------------------
+* Updated deprecated ament_index_cpp API (`#3011 <https://github.com/ros2/rclcpp/issues/3011>`_)
+* Unified Node Interfaces: Add const version of get_node_x_interface() (`#3006 <https://github.com/ros2/rclcpp/issues/3006>`_)
+* Parameter Descriptor Simplification  (`#2179 <https://github.com/ros2/rclcpp/issues/2179>`_)
+* ParameterEventHandler support ContentFiltering (`#2971 <https://github.com/ros2/rclcpp/issues/2971>`_)
+* update policy_name_from_kind && test_qos (`#2156 <https://github.com/ros2/rclcpp/issues/2156>`_)
+* Add ability to disable and enable subscription's callbacks (`#2985 <https://github.com/ros2/rclcpp/issues/2985>`_)
+* Switch to isolated testing via rmw_test_fixture (`#2929 <https://github.com/ros2/rclcpp/issues/2929>`_)
+* remove I/O from signal handler. (`#2986 <https://github.com/ros2/rclcpp/issues/2986>`_)
+* Contributors: Alejandro Hernández Cordero, Andrianov Roman, Barry Xu, Lucas Wendland, Michael Orlov, Tomoya Fujita, fabianhirmann, yadunund
+
+30.1.3 (2025-11-18)
+-------------------
+* correct test function descriptions (`#2970 <https://github.com/ros2/rclcpp/issues/2970>`_)
+* add : get clients, servers info (`#2569 <https://github.com/ros2/rclcpp/issues/2569>`_)
+* Fix REP url locations (`#2987 <https://github.com/ros2/rclcpp/issues/2987>`_)
+* Contributors: Minju, Lee, Tim Clephas, Yuchen966
+
+30.1.2 (2025-10-21)
+-------------------
+* clear handles before node destruction in test_memory_strategy. (`#2969 <https://github.com/ros2/rclcpp/issues/2969>`_)
+* Added static assert asserting custom types have no overloaded operator new (`#2954 <https://github.com/ros2/rclcpp/issues/2954>`_)
+* Store graph listener inside the context instead of the node graph (`#2952 <https://github.com/ros2/rclcpp/issues/2952>`_)
+* Reapply "Catch the exception from rate.sleep() if the context is invalid. (`#2956 <https://github.com/ros2/rclcpp/issues/2956>`_)" (`#2963 <https://github.com/ros2/rclcpp/issues/2963>`_) (`#2964 <https://github.com/ros2/rclcpp/issues/2964>`_)
+* Revert "Catch the exception from rate.sleep() if the context is invalid. (`#2956 <https://github.com/ros2/rclcpp/issues/2956>`_)" (`#2963 <https://github.com/ros2/rclcpp/issues/2963>`_)
+* Catch the exception from rate.sleep() if the context is invalid. (`#2956 <https://github.com/ros2/rclcpp/issues/2956>`_)
+* update Time documentation (`#2955 <https://github.com/ros2/rclcpp/issues/2955>`_)
+* Contributors: Ilario A. Azzollini, Ivo Ivanov, Skyler Medeiros, Tomoya Fujita
+
 30.1.1 (2025-09-11)
 -------------------
 * Removed warning (`#2949 <https://github.com/ros2/rclcpp/issues/2949>`_)
