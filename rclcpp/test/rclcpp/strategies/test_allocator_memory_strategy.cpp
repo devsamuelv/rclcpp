@@ -20,7 +20,10 @@
 #include <utility>
 
 #include "gtest/gtest.h"
+#include <rcpputils/compile_warnings.hpp>
 
+// can be removed after the lyrical release
+RCPPUTILS_DEPRECATION_WARNING_OFF_START
 #include "rclcpp/strategies/allocator_memory_strategy.hpp"
 #include "rcpputils/scope_exit.hpp"
 #include "test_msgs/msg/empty.hpp"
@@ -577,7 +580,9 @@ TEST_F(TestAllocatorMemoryStrategy, add_handles_to_wait_set_guard_condition) {
 
   RclWaitSetSizes insufficient_capacities = SufficientWaitSetCapacities();
   insufficient_capacities.size_of_guard_conditions = 0;
-  EXPECT_THROW(TestAddHandlesToWaitSet(node, insufficient_capacities), std::runtime_error);
+  EXPECT_THROW(
+    (void)TestAddHandlesToWaitSet(node, insufficient_capacities),
+    std::runtime_error);
 }
 
 TEST_F(TestAllocatorMemoryStrategy, add_handles_to_wait_set_timer) {
@@ -910,3 +915,4 @@ TEST_F(TestAllocatorMemoryStrategy, get_next_waitable_out_of_scope) {
   allocator_memory_strategy()->get_next_waitable(result, weak_groups_to_nodes);
   EXPECT_EQ(nullptr, result.node_base);
 }
+RCPPUTILS_DEPRECATION_WARNING_OFF_STOP

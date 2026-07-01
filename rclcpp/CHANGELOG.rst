@@ -2,6 +2,71 @@
 Changelog for package rclcpp
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+33.0.1 (2026-05-22)
+-------------------
+* add event_type_is_supported() for Publisher/Subscription. (`#3132 <https://github.com/ros2/rclcpp//issues/3132>`_)
+* chore: remove outdated TODO in GenericClient (`#3146 <https://github.com/ros2/rclcpp//issues/3146>`_)
+* chore: fix typo in test_time_source.cpp (`#3145 <https://github.com/ros2/rclcpp//issues/3145>`_)
+* Contributors: Pietro Gelmini, Tomoya Fujita
+
+33.0.0 (2026-05-07)
+-------------------
+* Deprecate memory strategy (`#3136 <https://github.com/ros2/rclcpp/issues/3136>`_)
+* Cleanups headers and fix wording (`#3138 <https://github.com/ros2/rclcpp/issues/3138>`_)
+* Contributors: Alejandro Hernández Cordero, Janosch Machowinski
+
+32.0.0 (2026-04-30)
+-------------------
+* Include EventsCBGExecutor (`#3137 <https://github.com/ros2/rclcpp/issues/3137>`_)
+* Fix topic statistics for IPC subscriptions (`#3130 <https://github.com/ros2/rclcpp/issues/3130>`_)
+* fix: Fixed MSVC compile errors (`#3135 <https://github.com/ros2/rclcpp/issues/3135>`_)
+* feat: Added callback group events executor (`#3097 <https://github.com/ros2/rclcpp/issues/3097>`_)
+* Fix wrong dependency (`#3133 <https://github.com/ros2/rclcpp/issues/3133>`_)
+* feat: Switch to c++20 and remove resulting compile warnings (`#3124 <https://github.com/ros2/rclcpp/issues/3124>`_)
+* fix: Compile fix for MSVC 2022 (`#3131 <https://github.com/ros2/rclcpp/issues/3131>`_)
+* Contributors: Janosch Machowinski, Maurice Alexander Purnawan, jay
+
+31.0.3 (2026-04-14)
+-------------------
+
+* Remove warnings on tests (`#3125 <https://github.com/ros2/rclcpp/issues/3125>`_)
+
+* Contributors: Alejandro Hernández Cordero
+
+31.0.2 (2026-04-09)
+-------------------
+* feat: Add per-node log level support via NodeOptions (`#3092 <https://github.com/ros2/rclcpp/issues/3092>`_)
+* Improve error message when parameter value is missing (`#3093 <https://github.com/ros2/rclcpp/issues/3093>`_)
+* Fix incorrect internal clear inside `RingBufferImplementation` (`#3116 <https://github.com/ros2/rclcpp/issues/3116>`_)
+* Add acceptable_buffer_backends field in SubscriptionOptionsBase (`#3098 <https://github.com/ros2/rclcpp/issues/3098>`_)
+* Remove comment about removed StaticSingleThreadedExecutor (`#3121 <https://github.com/ros2/rclcpp/issues/3121>`_)
+* Added tracepoint (`#3103 <https://github.com/ros2/rclcpp/issues/3103>`_)
+* Add ConstRefCallback in take_shared_method (`#3066 <https://github.com/ros2/rclcpp/issues/3066>`_)
+* Replace mispelled "${rcl_interfaces_TARGES}" by rcl_interfaces::rcl_interfaces (`#3112 <https://github.com/ros2/rclcpp/issues/3112>`_)
+* Contributors: Alexis Tsogias, CY Chen, Maurice Alexander Purnawan, Michael Carlstrom, Oren Bell, Peng Wang, Yadnyeshwar Amol Sakhare
+
+31.0.1 (2026-03-24)
+-------------------
+* Use new ROSIDL aggregate CMake target (`#3105 <https://github.com/ros2/rclcpp/issues/3105>`_)
+* remove duplicate test cases in TestAnySubscriptionCallback::is_serialized_message_callback (`#3104 <https://github.com/ros2/rclcpp/issues/3104>`_)
+* Contributors: Alexis Tsogias, Emerson Knapp
+
+31.0.0 (2026-03-20)
+-------------------
+* keep the event alive throught the assertion, preveiting the race. (`#3099 <https://github.com/ros2/rclcpp/issues/3099>`_)
+* Add support check for content filter feature in subscription (`#3089 <https://github.com/ros2/rclcpp/issues/3089>`_)
+* Expose ServiceType in Service public API (`#3088 <https://github.com/ros2/rclcpp/issues/3088>`_)
+* perf: Optimized out shared_ptr copies (`#3079 <https://github.com/ros2/rclcpp/issues/3079>`_)
+* avoid stale parameter events in content filter tests. (`#3085 <https://github.com/ros2/rclcpp/issues/3085>`_)
+* improve lookup time for matches_any_publishers() (`#3084 <https://github.com/ros2/rclcpp/issues/3084>`_)
+* Add tests isolation (`#3081 <https://github.com/ros2/rclcpp/issues/3081>`_)
+* Revert "improve lookup time for matches_any_publishers(). (`#3068 <https://github.com/ros2/rclcpp/issues/3068>`_)" (`#3077 <https://github.com/ros2/rclcpp/issues/3077>`_)
+* improve lookup time for matches_any_publishers(). (`#3068 <https://github.com/ros2/rclcpp/issues/3068>`_)
+* fix: Use default rcl allocator if allocator is std::allocator (`#3058 <https://github.com/ros2/rclcpp/issues/3058>`_)
+* fix: Various data races in test cases (`#3057 <https://github.com/ros2/rclcpp/issues/3057>`_)
+* fix: Fix data race in CallbackGroup::size() (`#3056 <https://github.com/ros2/rclcpp/issues/3056>`_)
+* Contributors: Barry Xu, Danil, Janosch Machowinski, Julien Enoch, Tomoya Fujita
+
 30.1.5 (2026-02-09)
 -------------------
 * remove default: so that compiler can detect the missing case. (`#3048 <https://github.com/ros2/rclcpp/issues/3048>`_)

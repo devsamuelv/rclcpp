@@ -18,7 +18,6 @@
 #include <map>
 #include <memory>
 #include <string>
-#include <utility>
 #include <vector>
 
 #include "rcl/arguments.h"
@@ -250,6 +249,9 @@ Node::Node(
     options.parameter_event_qos(),
     rclcpp::detail::PublisherQosParametersTraits{});
 
+  if (options.log_level() != rclcpp::Logger::Level::Unset) {
+    node_logging_->get_logger().set_level(options.log_level());
+  }
   if (options.enable_logger_service()) {
     node_logging_->create_logger_services(node_services_);
   }
